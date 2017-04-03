@@ -1,0 +1,187 @@
+/* common elements */
+
+.container {
+    background: rgba(39, 40, 34, 0.89);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+.square {
+    position: absolute;
+    background: #ddd873;
+    width: 16%;
+    height: 16%;
+}
+
+.square.top {
+    top: 15%;
+}
+.square.bottom {
+    bottom: 15%;
+}
+.square.left {
+    left: 15%;
+}
+.square.right {
+    right: 15%;
+}
+
+/* websocket challenge */
+.container.ws {
+    text-align: left;
+}
+
+.container.ws .img {
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+    position: relative;
+    fill: #ff6600;
+}
+
+.item:hover .ws .img {
+    -webkit-animation: ws 5s infinite;
+}
+
+/* lodash qd */
+
+.item:hover .lodash .square.bottom {
+    -webkit-animation: lodash-bottom 5s infinite;
+}
+
+.item:hover .lodash .square.top {
+    -webkit-animation: lodash-top 5s infinite;
+}
+
+.container.lodash .square.top {
+    transform: scale(0);
+}
+
+.container.lodash .square.bottom {
+    width: 50%;
+    background: #3492ff;
+}
+
+/* css qd */
+
+.item:hover .css .square.bottom.left {
+    -webkit-animation: css-bottom-left 5s infinite;
+}
+
+.container.css .square.top {
+    transform: scale(0);
+}
+
+.container.css .square.bottom.right {
+    transform: scale(0);
+}
+
+.container.css .square.bottom.left {
+    background: #a3e32e;
+}
+
+/* animations */
+
+@-webkit-keyframes lodash-bottom {
+    0% {
+        transform: scale(1.2);
+    }
+    5% {
+        transform: scale(1.4);
+    }
+    8% {
+        transform: scale(1.2);
+    }
+    20% {
+        transform: scale(1.2);
+        background: #3492ff;
+    }
+    30% {
+        transform: scale(0.6);
+        background: #3492ff;
+    }
+    32% {
+        transform: scale(1.1);
+    }
+    34% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1);
+        background: #3492ff;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes css-bottom-left {
+    0% {
+        transform: scale(1.2);
+    }
+    5% {
+        transform: scale(1.4);
+    }
+    8% {
+        transform: scale(1.2);
+    }
+    20% {
+        transform: scale(1.2);
+    }
+    22% {
+        background: #ddd873;
+    }
+    30% {
+        transform: scale(0.6);
+    }
+    32% {
+        transform: scale(1.1);
+    }
+    34% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1);
+        background: #a3e32e;
+    }
+    72% {
+        transform: scale(1.4);
+    }
+    75% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes ws {
+    0% {
+        transform: scale(1.2);
+    }
+    5% {
+        transform: scale(1.4);
+    }
+    8% {
+        transform: scale(1.2);
+    }
+    20% {
+        transform: scale(1.2);
+    }
+    70% {
+        transform: scale(1.2);
+    }
+    72% {
+        transform: scale(1.4);
+    }
+    75% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
