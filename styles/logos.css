@@ -1,7 +1,7 @@
 /* common elements */
 
 .container {
-    background: rgba(39, 40, 34, 0.89);
+    background: rgba(255, 255, 255, 0.89);
     width: 200px;
     height: 200px;
     position: relative;
@@ -44,7 +44,7 @@
 }
 
 .item:hover .ws .img {
-    -webkit-animation: ws 5s infinite;
+    -webkit-animation: ws-img 5s infinite;
 }
 
 /* lodash qd */
@@ -159,12 +159,12 @@
     }
 }
 
-@-webkit-keyframes ws {
+@-webkit-keyframes ws-img {
     0% {
         transform: scale(1.2);
     }
     5% {
-        transform: scale(1.4);
+        transform: scale(1.3);
     }
     8% {
         transform: scale(1.2);
@@ -172,13 +172,13 @@
     20% {
         transform: scale(1.2);
     }
-    70% {
-        transform: scale(1.2);
+    30% {
+        transform: scale(0.6);
     }
-    72% {
-        transform: scale(1.4);
+    32% {
+        transform: scale(1.1);
     }
-    75% {
+    34% {
         transform: scale(1);
     }
     100% {
