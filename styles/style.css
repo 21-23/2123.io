@@ -71,6 +71,7 @@ header {
 @media only screen and (max-width : 768px) {
     .products {
         width: auto;
+        margin-top: 10vh;
     }
 
     .products {
