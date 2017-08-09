@@ -6,8 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js",
     "watch": "webpack --config webpack.config.dev.js --watch",
-    "build": "webpack --config webpack.config.dev.js",
+    "build": "npm run clean && webpack --config webpack.config.dev.js",
     "build:prod": "npm run clean:prod && webpack --config webpack.config.prod.js",
+    "clean": "rm -rf dist",
     "clean:prod": "rm -rf dist-prod",
     "precommit": "lint-staged",
     "lint": "eslint ./app && stylint ./app"
