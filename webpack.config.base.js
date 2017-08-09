@@ -40,12 +40,13 @@ module.exports = {
                 ],
                 use: [
                     'style-loader',
+                    'css-loader',
                     'resolve-url-loader',
                     'stylus-loader',
                 ]
             },
             {
-                test: /\.otf?$/,
+                test: /\.(otf|ttf)?$/,
                 include: [
                     path.resolve(__dirname, 'app'),
                 ],
@@ -77,7 +78,7 @@ module.exports = {
             }
         }),
         new FaviconsWebpackPlugin({
-            logo: 'common/img/logo.png',
+            logo: 'common/img/2123-logo.png',
             persistentCache: true,
             inject: true,
             background: '#fff',

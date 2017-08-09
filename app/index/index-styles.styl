@@ -1,0 +1,71 @@
+@import '~common/fonts/families.styl'
+
+html
+    min-height 100%
+    background radial-gradient(ellipse at bottom, #415f7d 0, #1d2e3f 100%)
+    overflow hidden
+
+body
+    color #fff
+    font-family 'Montserrat', Helvetica, 'Helvetica Neue', Arial, sans-serif
+    font-weight normal
+
+a
+    color #ddd
+    text-decoration none
+    font-weight 300
+    &:hover
+        color #fff
+
+header
+    .header-logo
+        width 3em
+        height 3em
+        background #fff
+        color #333
+        font-size 3em
+        text-align center
+        line-height 3em
+        margin .5em auto
+        font-weight 300
+
+    .header-hint
+        text-align center
+
+.products-navigation
+    display flex
+    justify-content space-around
+    flex-flow row wrap
+    padding-top 4em
+    font-weight 300
+
+    .products-navigation-link
+        width 15vh
+        text-align center
+
+        .logo
+            width 15vh
+            height 15vh
+            margin auto
+            margin-bottom .4em
+
+        .title
+            line-height 150%
+
+        &.cssqd
+            .logo
+                background #fff
+        &.lodashqd
+            .logo
+                background url('common/img/_qd-logo.png') no-repeat #fff
+                background-size contain
+        &.wsc
+            .logo
+                background url('common/img/wsc-logo.png') center center no-repeat #fff
+                background-size contain
+
+.schedule
+    padding-top 2em
+
+    .heading
+        text-align center
