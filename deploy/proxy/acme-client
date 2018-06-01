@@ -1,0 +1,10 @@
+#!/bin/sh
+
+hosts="2123.io"
+
+for host in $hosts; do
+# s - use staging
+        acme-client -a https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf -Nnmvvs $host && renew=1
+done
+
+[ "$renew" = 1 ] && rc-service nginx reload

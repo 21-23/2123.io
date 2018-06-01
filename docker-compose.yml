@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+
+  proxy:
+    build:
+      context: .
+      dockerfile: ./deploy/proxy/Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
