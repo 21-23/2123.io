@@ -1,71 +1,134 @@
-@import '~common/fonts/families.styl'
+dark = #331832
+darkest = #272932
+// bright = #F79D65
+bright = #F7B267
 
-html
-    min-height 100%
-    background radial-gradient(ellipse at bottom, #415f7d 0, #1d2e3f 100%)
-    overflow hidden
-
-body
-    color #fff
-    font-family 'Montserrat', Helvetica, 'Helvetica Neue', Arial, sans-serif
-    font-weight normal
-
-a
-    color #ddd
-    text-decoration none
-    font-weight 300
-    &:hover
-        color #fff
+h1
+  font-weight normal
 
 header
-    .header-logo
-        width 3em
-        height 3em
-        background #fff
-        color #333
-        font-size 3em
-        text-align center
-        line-height 3em
-        margin .5em auto
-        font-weight 300
+  text-align center
+  background dark
+  padding 5rem 0 6.15rem
 
-    .header-hint
-        text-align center
+  .logo
+    color bright
+    font-size 7rem
+    font-weight lighter
+    font-family 'Yeseva One', cursive
 
-.products-navigation
+  .tagline
+    font-size 1.15rem
+    font-weight lighter
+    font-family sans-serif
+    color #F5F1ED
+
+section
+  h1
+    font-weight lighter
+    font-family sans-serif
+    font-size 2.8rem
+    padding 3rem 0
+    color darkest
+
+.demo
+  text-align center
+  background #F5F1ED
+
+  .embed
+    width 800px
+    height 420px
+    margin auto
+    background url(app/common/img/cssqd.png)
+    background-size contain
+    background-repeat no-repeat
+
+.events
+  display flex
+  align-items center
+  flex-direction column
+  background #FCFCFC
+
+  .event
     display flex
-    justify-content space-around
-    flex-flow row wrap
-    padding-top 4em
-    font-weight 300
+    width 25vw
+    font-family sans-serif
+    margin-bottom 2rem
 
-    .products-navigation-link
-        width 15vh
-        text-align center
+    .description
 
-        .logo
-            width 15vh
-            height 15vh
-            margin auto
-            margin-bottom .4em
+      h1
+        padding 0
+        font-size 1.5rem
 
-        .title
-            line-height 150%
+        .name
+          border-bottom 1px solid #D7D0C8
+          cursor pointer
 
-        &.cssqd
-            .logo
-                background #fff
-        &.lodashqd
-            .logo
-                background url('common/img/_qd-logo.png') no-repeat #fff
-                background-size contain
-        &.wsc
-            .logo
-                background url('common/img/wsc-logo.png') center center no-repeat #fff
-                background-size contain
+        .game
+          display inline-block
+          padding .25rem
+          border-radius .5rem
+          color #f5f1ed
+          font-size 1rem
+          vertical-align top
 
-.schedule
-    padding-top 2em
+      h2
+        font-weight normal
+        font-size 1rem
 
-    .heading
-        text-align center
+      time
+        display block
+        font-size .8rem
+        margin .5rem 0
+
+    &.cssqd
+      .game
+        background darkcyan
+
+    &.jsqd
+      .game
+        background #D8BE49
+
+    &._qd
+      .game
+        background #3590F3
+
+.github
+  background-color bright
+  a
+    display flex
+    align-items center
+    justify-content center
+    text-decoration none
+    color darkest
+
+    .logo
+      width 120px
+      height 120px
+      background-image url(GitHub-Mark-120px-plus.png)
+      margin 2rem 1rem
+
+    .on-github
+      font-size 1rem
+
+footer
+  background dark
+  text-align center
+  padding 2rem
+  color #f5f1ed
+  font-family sans-serif
+
+
+  h1
+    font-weight lighter
+    font-size 1.5rem
+
+    a
+      color #f5f1ed
+      text-decoration none
+
+  h2
+    margin 1rem 0 0
+    font-size 1rem
+    font-weight lighter
