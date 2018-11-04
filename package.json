@@ -8,6 +8,8 @@
     "watch": "webpack --config webpack.config.dev.js --watch",
     "build": "npm run clean && webpack --config webpack.config.dev.js",
     "build:prod": "npm run clean:prod && webpack --config webpack.config.prod.js",
+    "build:local": "webpack --config webpack.config.local.js",
+    "watch:local": "webpack --config webpack.config.local.js --watch",
     "clean": "rm -rf dist",
     "clean:prod": "rm -rf dist-prod",
     "precommit": "lint-staged",
