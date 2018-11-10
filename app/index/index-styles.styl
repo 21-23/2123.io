@@ -37,17 +37,15 @@ section
   background #F5F1ED
 
   .description
-    width 800px
+    width 60vw
     font-size 1.2rem
-    padding 1.2rem 0
+    padding 0 0 1.2rem
 
   .screenshot
-    width 800px
-    height 420px
-    background url(app/common/img/cssqd.png)
-    background-size contain
-    background-repeat no-repeat
-
+    width 60vw
+    // hide the screenshot on portrait orientation
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait)
+      display none
 
   .try-cssqd-button
     padding-bottom 3rem

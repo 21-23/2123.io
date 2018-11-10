@@ -63,6 +63,10 @@ module.exports = {
                     'file-loader?name=[name].[ext]',
                 ]
             },
+            {
+                test: /\.(html)$/,
+                loader: 'html-loader',
+            }
         ]
     },
     resolve: {
