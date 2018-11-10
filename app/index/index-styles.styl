@@ -18,6 +18,7 @@ header
 
   .tagline
     font-size 1.15rem
+    margin-top 1.15rem
     font-weight lighter
     font-family sans-serif
     color #F5F1ED
@@ -38,17 +39,20 @@ section
 
   .description
     width 60vw
+    font-family sans-serif
+    font-weight lighter
     font-size 1.2rem
     padding 0 0 1.2rem
+    text-align center
+
+    p
+      margin-bottom 1.2rem
 
   .screenshot
     width 60vw
-    // hide the screenshot on portrait orientation
-    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait)
-      display none
 
   .try-cssqd-button
-    padding-bottom 3rem
+    padding 3rem 0
     font-family sans-serif
     font-weight lighter
 
@@ -59,6 +63,7 @@ section
         background-color bright
         font-size 1.5rem
         width 20vw
+        min-width 240px
         padding 1rem
         border-radius 1.5rem
         color dark
@@ -73,6 +78,7 @@ section
   .event
     display flex
     width 25vw
+    min-width 260px
     font-family sans-serif
     margin-bottom 2rem
 
