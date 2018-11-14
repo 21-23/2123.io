@@ -1,71 +1,162 @@
-@import '~common/fonts/families.styl'
+dark     = #331832
+darkest  = #272932
+bright   = #F7B267
+cssqd-bg = darkcyan
+jsqd-bg  = #D8BE49
+_qd-bg   = #3590F3
 
-html
-    min-height 100%
-    background radial-gradient(ellipse at bottom, #415f7d 0, #1d2e3f 100%)
-    overflow hidden
+h1
+  font-family sans-serif
+  font-weight lighter
+  font-size 1.5rem
 
-body
-    color #fff
-    font-family 'Montserrat', Helvetica, 'Helvetica Neue', Arial, sans-serif
-    font-weight normal
-
-a
-    color #ddd
-    text-decoration none
-    font-weight 300
-    &:hover
-        color #fff
+.flex-column-center
+  display flex
+  align-items center
+  flex-direction column
 
 header
-    .header-logo
-        width 3em
-        height 3em
-        background #fff
-        color #333
-        font-size 3em
-        text-align center
-        line-height 3em
-        margin .5em auto
-        font-weight 300
+  text-align center
+  background dark
+  padding 5rem 0 6.15rem
 
-    .header-hint
+  .logo
+    color bright
+    font-size 7rem
+    font-weight lighter
+    font-family 'Yeseva One', cursive
+
+  .tagline
+    font-size 1.15rem
+    margin-top 1.15rem
+    padding 0 1.15rem
+    font-weight lighter
+    font-family sans-serif
+    color #F5F1ED
+
+section
+  h1
+    font-size 2.8rem
+    padding 3rem 0
+    color darkest
+
+.demo
+  background #F5F1ED
+
+  .description
+    width 60vw
+    font-family sans-serif
+    font-weight lighter
+    font-size 1.2rem
+    padding 0 0 1.2rem
+    text-align center
+
+    p
+      margin-bottom 1.2rem
+
+  .screenshot
+    width 60vw
+
+  .try-cssqd-button
+    padding 3rem 0
+    font-family sans-serif
+    font-weight lighter
+
+    a
+      text-decoration none
+
+      .button
+        background-color bright
+        font-size 1.5rem
+        width 20vw
+        min-width 240px
+        padding 1rem
+        border-radius 1.5rem
+        color dark
         text-align center
 
-.products-navigation
+.events
+  background #FCFCFC
+
+  .event
     display flex
-    justify-content space-around
-    flex-flow row wrap
-    padding-top 4em
-    font-weight 300
+    width 25vw
+    min-width 260px
+    font-family sans-serif
+    margin-bottom 2rem
 
-    .products-navigation-link
-        width 15vh
-        text-align center
+    .description
 
-        .logo
-            width 15vh
-            height 15vh
-            margin auto
-            margin-bottom .4em
+      h1
+        padding 0
+        font-size 1.5rem
 
-        .title
-            line-height 150%
+        a
+          text-decoration none
 
-        &.cssqd
-            .logo
-                background #fff
-        &.lodashqd
-            .logo
-                background url('common/img/_qd-logo.png') no-repeat #fff
-                background-size contain
-        &.wsc
-            .logo
-                background url('common/img/wsc-logo.png') center center no-repeat #fff
-                background-size contain
+          .name
+            color darkest
+            border-bottom 1px solid #D7D0C8
 
-.schedule
-    padding-top 2em
+        .game
+          display inline-block
+          padding .25rem
+          border-radius .5rem
+          color #f5f1ed
+          font-size 1rem
+          vertical-align top
 
-    .heading
-        text-align center
+      h2
+        font-weight normal
+        font-size 1rem
+
+      time
+        display block
+        font-size .8rem
+        margin .5rem 0
+
+    &.cssqd
+      .game
+        background cssqd-bg
+
+    &.jsqd
+      .game
+        background jsqd-bg
+
+    &._qd
+      .game
+        background _qd-bg
+
+.github
+  background-color bright
+  a
+    display flex
+    align-items center
+    justify-content center
+    text-decoration none
+    color darkest
+
+    .logo
+      width 120px
+      height 120px
+      background-image url(GitHub-Mark-120px-plus.png)
+      margin 2rem 1rem
+
+    .on-github
+      font-size 1rem
+
+footer
+  background dark
+  text-align center
+  padding 2rem
+  color #f5f1ed
+  font-family sans-serif
+
+  a
+    color #f5f1ed
+    text-decoration none
+
+  h2
+    margin 1rem 0 0
+    font-size 1rem
+    font-weight lighter
