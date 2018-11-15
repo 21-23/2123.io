@@ -62,21 +62,35 @@ section
     font-family sans-serif
     font-weight lighter
 
-    a
-      text-decoration none
+a
+  text-decoration none
+  font-family sans-serif
+  font-weight lighter
 
-      .button
-        background-color bright
-        font-size 1.5rem
-        width 20vw
-        min-width 240px
-        padding 1rem
-        border-radius 1.5rem
-        color dark
-        text-align center
+  .button
+    background-color bright
+    font-size 1.5rem
+    width 20vw
+    min-width 240px
+    padding 1rem
+    border-radius 1.5rem
+    color dark
+    text-align center
 
 .events
   background #FCFCFC
+
+  .description
+    font-family sans-serif
+    font-weight lighter
+    font-size 1.5rem
+    margin-bottom .5rem
+
+    p
+      text-align center
+
+    & + a
+      margin-top 2rem
 
   .event
     display flex
