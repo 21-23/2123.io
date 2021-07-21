@@ -1,3 +1,5 @@
+@import '~common/fonts/families.styl'
+
 dark     = #331832
 darkest  = #272932
 bright   = #F7B267
@@ -19,19 +21,18 @@ header
   text-align center
   background dark
   padding 5rem 0 6.15rem
+  font-family 'Montserrat'
 
   .logo
     color bright
     font-size 7rem
     font-weight lighter
-    font-family 'Yeseva One', cursive
 
   .tagline
     font-size 1.15rem
     margin-top 1.15rem
     padding 0 1.15rem
     font-weight lighter
-    font-family sans-serif
     color #F5F1ED
 
 section
@@ -73,7 +74,6 @@ a
     width 20vw
     min-width 240px
     padding 1rem
-    border-radius 1.5rem
     color dark
     text-align center
 
@@ -90,70 +90,21 @@ a
       text-align center
 
     & + a
-      margin-top 2rem
-
-  .event
-    display flex
-    width 25vw
-    min-width 260px
-    font-family sans-serif
-    margin-bottom 2rem
-
-    .description
-
-      h1
-        padding 0
-        font-size 1.5rem
-
-        a
-          text-decoration none
-
-          .name
-            color darkest
-            border-bottom 1px solid #D7D0C8
-
-        .game
-          display inline-block
-          padding .3rem .6rem
-          border-radius .5rem
-          color #f5f1ed
-          font-size 1rem
-          vertical-align top
-
-      h2
-        font-weight normal
-        font-size 1rem
-
-      time
-        display block
-        font-size .8rem
-        margin .5rem 0
-
-    &.cssqd
-      .game
-        background cssqd-bg
-
-    &.jsqd
-      .game
-        background jsqd-bg
-
-    &._qd
-      .game
-        background _qd-bg
+      margin 2rem 0
 
 .github
-  background-color bright
   a
     display flex
     align-items center
     justify-content center
     text-decoration none
-    color darkest
+    color #f5f1ed
 
     .logo
-      width 120px
-      height 120px
+      width 42px
+      height 42px
       background-image url(GitHub-Mark-120px-plus.png)
+      background-size contain
       margin 2rem 1rem
 
     .on-github
@@ -165,6 +116,9 @@ footer
   padding 2rem
   color #f5f1ed
   font-family sans-serif
+  display flex
+  justify-content space-evenly
+  align-items center
 
   a
     color #f5f1ed
