@@ -1,0 +1,55 @@
+@import '~common/fonts/families.styl'
+
+html
+    min-height 100%
+    background linear-gradient(to top, #331832, #260a25 100%)
+    overflow hidden
+
+.login-view
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    font-family Helvetica, 'Helvetica Neue', Arial
+
+
+    .login-panel
+        position absolute
+        width 100%
+        height 15vh
+        top 60vh
+        background rgba(0, 0, 0, .3)
+        display flex
+        flex-flow row nowrap
+        justify-content space-around
+        align-items center
+
+        .login-button
+            height 13vh
+            width 13vh
+            line-height 13vh
+            font-size 9vh
+            text-align center
+            text-decoration none
+            font-family AwesomeIcon
+            color #fff
+            transition color 300ms
+
+            &:hover
+                color #753372
+
+@media all and (orientation: landscape)
+// TODO: where to make this override?
+    .login-view
+        .login-panel
+            top 40vh
+            height 20vh
+            justify-content center
+
+            .login-button
+                height 18vh
+                width 18vh
+                line-height 18vh
+                font-size 13vh
+                margin 0 2vh

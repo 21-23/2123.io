@@ -7,6 +7,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 module.exports = {
     entry: {
         'index': './app/index/index-view.js',
+        'login': './app/login/login-view.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -104,6 +105,11 @@ module.exports = {
             filename: 'index.html',
             template: 'app/index/index.html',
             chunks: ['index']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'login.html',
+            template: 'app/login/login.html',
+            chunks: ['login']
         }),
     ],
 };
